@@ -1,9 +1,12 @@
 #include<stdio.h>
 /**
- * Description: This program prints texts followed by a new line
+ * main - Entry point
+ * Description: Program prints a string
+ * Return: 0 (Success)
  */
 int main(void)
 {
-puts("Programming is like building a multilingual puzzle \n");
+puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
+
