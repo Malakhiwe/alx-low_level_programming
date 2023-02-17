@@ -1,7 +1,6 @@
 #include<stdio.h>
-int main(int argc, char* argv[])
+int main(void)
 {
-char str[] = "Programming is lie building a multilingual puzzle /n";
-puts(str);
+puts("Programming is lie building a multilingual puzzle /n");
 return (0);
 }
