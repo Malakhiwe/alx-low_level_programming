@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Entry point of the program
  * Description: Prints all the numbers from base 9 without putchar
@@ -7,7 +8,7 @@
 int main(void)
 {
 int n;
-for  (n = 0; n < 10; n++)
+for  (n = '0'; n <= '10'; n++)
 {
 putchar(n);
 }
