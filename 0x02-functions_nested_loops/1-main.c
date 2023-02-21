@@ -2,8 +2,8 @@
 /**
  * main - check the code
  * Description: prints alphabets
- * Return: Always 0.
- */
+ * Return: Always 0 Success
+ **/
 int main(void)
 {
 print_alphabet();
