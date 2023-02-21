@@ -1,8 +1,6 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * main - Entry into program
- * Description: This program prints alphabet
+ * print_alphabet - This program prints alphabet
  * Return: 0 Success
  **/
 void print_alphabet(void)
@@ -13,5 +11,4 @@ for (c = 'a'; c <= 'z'; c++)
 _putchar(c);
 }
 _putchar('\n');
-return;
 }
