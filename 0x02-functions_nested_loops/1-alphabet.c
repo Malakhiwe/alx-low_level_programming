@@ -5,13 +5,13 @@
  * Description: This program prints alphabet
  * Return: 0 Success
  **/
-int main(void)
+void print_alphabet(void)
 {
-char k;
-for (k = 'a'; k <= 'z'; k++)
+char c;
+for (c = 'a'; c <= 'z'; c++)
 {
-putchar(k);
+_putchar(c);
 }
-putchar('\n');
-return (0);
+_putchar('\n');
+return;
 }
