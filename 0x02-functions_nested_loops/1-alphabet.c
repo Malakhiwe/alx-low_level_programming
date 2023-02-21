@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "1-main.c"
 /**
- * main - Entry into main program
+ * main - Entry into program
  * Description: This program prints alphabet
  * Return: 0 Success
  **/
