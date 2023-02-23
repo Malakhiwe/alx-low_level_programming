@@ -15,16 +15,19 @@ int largest;
 if (a > b && b > c)
 {
 largest = a;
+printf("a %d \n", largest);
 }
 else if (b > a && a > c)
 {
 largest = b;
+printf("b %d \n", largest);
 }
 else
 {
 if (c > b && c > a)
 {
 largest = c;
+printf("a %d \n", largest);
 }
 }
 
