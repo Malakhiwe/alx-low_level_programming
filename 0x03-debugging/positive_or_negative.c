@@ -6,7 +6,7 @@
  * Description: Program assigns a random number to the variable
  * Return: 0 (Success)
  **/
-int main(void)
+int positive_or_negative()
 {
 int n;
 srand(time(0));
