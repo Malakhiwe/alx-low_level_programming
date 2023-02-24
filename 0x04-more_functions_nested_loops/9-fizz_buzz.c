@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+
 /**
  * main - prints certain numbers with special conditions
  * Return: 0 Success
