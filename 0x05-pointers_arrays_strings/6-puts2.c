@@ -25,8 +25,8 @@ for (m = 0; m <= i; m++)
 {
 if (m % 2 == 0)
 {
-putchar(str[m]);
+_putchar(str[m]);
 }
 }
-putchar('\n');
+_putchar('\n');
 }
