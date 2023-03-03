@@ -3,25 +3,22 @@
 
 /**
  * string_toupper - changes all lowercase letters of a string to uppercase
- * @a: pointer
- * Return: a
+ * @n: pointer
+ * Return: n
  */
 
-char *string_toupper(char *a)
+char *string_toupper(char *n)
 {
-int i = 0;
+int i;
 
-while (a[i] != '\0')
-{
-
-if (a[i] >= 'a' && a[i] <= 'z')
+i = 0;
+while (n[i] != '\0')
 {
 
-a[i] = a[i] - 32;
+if (n[i] >= 'a' && n[i] <= 'z')
+n[i] = n[i] - 32;
 i++;
 
 }
-
-}
-return (a);
+return (n);
 }
