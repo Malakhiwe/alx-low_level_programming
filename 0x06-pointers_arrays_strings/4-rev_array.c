@@ -4,6 +4,7 @@
 /**
  * reverse_array - reverses the contents of an array
  * @n: number of elements
+ * @a: contents of an array
  * Return: void
  */
 
