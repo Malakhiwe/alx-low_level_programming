@@ -3,7 +3,7 @@
 
 /**
  * _strpbrk - This function seaches a string for any set of bytes.
- * @s: Pointer to the string 
+ * @s: Pointer to the string
  * @accept: The accepted bytes
  * Return: 0 Always
  */
