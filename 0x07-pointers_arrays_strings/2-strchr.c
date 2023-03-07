@@ -21,7 +21,12 @@ s++;
 return (s);
 }
 
+else if (*s != c)
+{
+return (NULL);
 }
 
-return NULL;
+}
+
+return ((char *) s);
 }
