@@ -1,6 +1,3 @@
-#include "main.h"
-#include <stdio.h>
-
 #include <stdio.h>
 #include "main.h"
 
@@ -10,7 +7,6 @@
  *
  * Return: the int converted from the string
  */
-
 int _atoi(char *s)
 {
 int i, d, n, len, f, digit;
@@ -50,33 +46,29 @@ return (0);
 return (n);
 }
 
-
 /**
- * main - Checks the number of params and the multiplies 2 ints together.
- * @argc: Counts the number of args.
- * @argv: Array of arguments.
- * Return: product
+ * main - multiplies two numbers
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
+ * Return: 0 (Success), 1 (Error)
  */
-
-
 int main(int argc, char *argv[])
 {
-
-int product;
-int num1;
-int num2;
+int result, num1, num2;
 
 if (argc < 3 || argc > 3)
 {
-printf("Error \n");
+printf("Error\n");
 return (1);
 }
 
 num1 = _atoi(argv[1]);
 num2 = _atoi(argv[2]);
-product = num1 * num2;
+result = num1 * num2;
 
-printf("%d\n", product);
+printf("%d\n", result);
 
 return (0);
 }
+
