@@ -1,31 +1,58 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
+
+#include <stdio.h>
+#include "main.h"
 
 /**
- * multiplication - Accepts 2 parms then multiples two numbers.
- * @argc: Counts the number of arguments.
- * @argv: Array of arguments.
- * Return: product
+ * _atoi - converts a string to an integer
+ * @s: string to be converted
+ *
+ * Return: the int converted from the string
  */
 
-int multiplication(int __attribute__ ((unused)) argc, char *argv[])
+int _atoi(char *s)
 {
-int res = 0;
-int num1;
-int num2;
+int i, d, n, len, f, digit;
 
-num1 = atoi(argv[1]);
-num2 = atoi(argv[2]);
+i = 0;
+d = 0;
+n = 0;
+len = 0;
+f = 0;
+digit = 0;
 
-res = num1 * num2;
+while (s[len] != '\0')
+len++;
 
-return (res);
+while (i < len && f == 0)
+{
+if (s[i] == '-')
+++d;
 
+if (s[i] >= '0' && s[i] <= '9')
+{
+digit = s[i] - '0';
+if (d % 2)
+digit = -digit;
+n = n * 10 + digit;
+f = 1;
+if (s[i + 1] < '0' || s[i + 1] > '9')
+break;
+f = 0;
+}
+i++;
 }
 
+if (f == 0)
+return (0);
+
+return (n);
+}
+
+
 /**
- * main - Calls a function called multiplication which returns a result.
+ * main - Checks the number of params and the multiplies 2 ints together.
  * @argc: Counts the number of args.
  * @argv: Array of arguments.
  * Return: product
@@ -36,18 +63,20 @@ int main(int argc, char *argv[])
 {
 
 int product;
+int num1;
+int num2;
 
-if (argc > 1)
+if (argc < 3 || argc > 3)
 {
-product = multiplication(argc, argv);
-printf("%d\n", product);
-}
-
-else
-{
-printf("Error");
+printf("Error \n");
 return (1);
 }
-printf("This is argc:%d", argc);
+
+num1 = _atoi(argv[1]);
+num2 = _atoi(argv[2]);
+product = num1 * num2;
+
+printf("%d\n", product);
+
 return (0);
 }
