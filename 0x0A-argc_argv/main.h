@@ -1,4 +1,7 @@
-char mynameis(int argc __attribute__ ((unused)), char *argv[]);
-int main (int argc, char *argv[] __attribute__ ((unused)));
-int main(int argc, char *argv[]);
+#ifndef MAIN_H
+#define MAIN_H
+
 int _atoi(char *s);
+int _putchar(char c);
+
+#endif
