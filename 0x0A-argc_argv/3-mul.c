@@ -70,7 +70,7 @@ num2 = _atoi(argv[2]);
 
 product = num1 *num2;
 
-printf("%d\n", result);
+printf("%d\n", product);
 
 return (0);
 }
