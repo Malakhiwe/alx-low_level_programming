@@ -12,7 +12,7 @@ char *_strdup(char *str)
 {
 
 char *aaa;
-int i, r = 0;
+int i, n = 0;
 
 
 
@@ -29,7 +29,7 @@ aaa = malloc(sizeof(char) * (i + 1));
 if (aaa == NULL)
 return (NULL);
 
-for (n = 0; str[n; n++)
+for (n = 0; str[n]; n++)
 aaa[n] = str[n];
 return (aaa);
 }
