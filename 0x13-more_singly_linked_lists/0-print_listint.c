@@ -3,13 +3,12 @@
 #include "lists.h"
 /**
  * print_listint - Prints the number of elements in the linked list
- * h_ is a pointer to the linked list
+ * @h: is a pointer to the linked list
  * Return: count
  */
 size_t print_listint(const listint_t *h)
 {
-
-unsigned int count = 0;
+size_t count = 0;
 if (h == NULL)
 {
 printf("This list is empty!. \n");
